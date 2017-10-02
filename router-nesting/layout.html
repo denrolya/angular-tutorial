@@ -1,0 +1,22 @@
+<nav class="navbar " role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Test App</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="app.home">Home</a></li>
+        <li><a ui-sref="app.drinks">Drinks</a></li>
+    </ul>
+</nav>
+
+
+<div class="jumbotron text-center">
+	<h1>Test App</h1>
+	<p>This is a test app demonstrating the power of nested states</p>
+
+	<button class="btn btn-default" ui-sref="app.home">Home</button>
+	<button class="btn btn-info" ui-sref="app.form">Form</button>
+</div>
+
+<div class="container">
+	<div ui-view></div>
+</div>

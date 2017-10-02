@@ -1,0 +1,28 @@
+<form novalidate class="form">
+	<div class="form-group">
+		<label>
+    		Name: <input type="text" class="form-control" ng-model="vm.user.name" />
+    	</label>
+	</div>
+	
+	<div class="form-group">
+		<label>
+			E-mail: <input type="email" class="form-control" ng-model="vm.user.email" />
+		</label>	
+	</div>
+    
+    <div class="form-group">
+    	Best Editor:
+    	<label>
+    		<input type="radio" ng-model="vm.user.preference" value="vi" />vi
+    	</label>
+    	<label>
+    		<input type="radio" ng-model="vm.user.preference" value="emacs" />emacs
+    	</label>
+    </div>
+    <input type="button" class="btn btn-warning" ng-click="vm.reset()" value="Reset" />
+    <input type="submit" class="btn btn-primary" ng-click="vm.update(vm.user)" value="Save" />
+</form>
+
+<pre>user = {{ vm.user | json }}</pre>
+<pre>master = {{ vm.master | json }}</pre>
